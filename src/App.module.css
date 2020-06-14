@@ -1,0 +1,22 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  display: inline-block;
+  height: 100vh;
+  text-align: center;
+  overflow: scroll;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.Recipes {
+  width: auto;
+  margin: auto;
+}
+
+.Search_Form {
+  margin-bottom: 10px;
+}
+
+.Container {
+  margin-top: 10px;
+}
