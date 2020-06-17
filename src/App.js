@@ -8,7 +8,7 @@ import styles from './App.module.css';
 
 function App() {
 	const [recipes, setRecipes] = useState([]);
-	const [searchInput, setSearchInput] = useState('');
+	const [searchInput, setSearchInput] = useState('chicken');
 	const [query, setQuery] = useState('chicken');
 	const [showModal, setShowModal] = useState(false);
 	const [pickedRecipe, setPickedRecipe] = useState({});
@@ -29,7 +29,7 @@ function App() {
 	const getSearch = e => {
 		e.preventDefault();
 		setQuery(searchInput);
-		setSearchInput('');
+		
 	};
 
 	const handleClose = () => {
@@ -77,7 +77,9 @@ function App() {
 							className={styles.Search_Bar}
 							type="text"
 							value={searchInput}
+							placeholder="chicken"
 							onChange={e => setSearchInput(e.target.value)}
+							onClick={()=>setSearchInput('')}
 						/>
 						<button className={styles.Search_Button}>Search</button>
 					</form>

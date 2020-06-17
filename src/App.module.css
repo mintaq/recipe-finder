@@ -5,7 +5,27 @@
 	height: 100vh;
 	overflow: scroll;
 	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	overflow-x: hidden;
 }
+
+.App::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.App::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+.App::-webkit-scrollbar-thumb
+{
+	background-color: #636060;
+	border: 1px solid #555555;
+}
+
 
 .Search_Form {
 	min-width: 100vw;
