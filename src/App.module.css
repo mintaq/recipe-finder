@@ -1,22 +1,49 @@
 @import '~antd/dist/antd.css';
 
 .App {
-  display: inline-block;
-  height: 100vh;
-  text-align: center;
-  overflow: scroll;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-}
-
-.Recipes {
-  width: auto;
-  margin: auto;
+	position: relative;
+	height: 100vh;
+	overflow: scroll;
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .Search_Form {
-  margin-bottom: 10px;
+	min-width: 100vw;
+	margin: 80px 0 1% !important;
+	text-align: center;
 }
 
-.Container {
-  margin-top: 10px;
+.Search_Bar {
+	padding: 10px 20px;
+	width: 50%;
+	border: none;
+}
+
+.Search_Button {
+	padding: 10px 20px;
+	color: white;
+	background-color: lightcoral;
+	border: none;
+}
+
+.Recipes {
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+	margin: 10px 20px 10px;
+}
+
+.Logo {
+	position: relative;
+	text-align: center;
+	padding-left: 45%;
+}
+
+.App_Bar {
+	align-items: center;
+	background-color: #2c3e50 !important;
+}
+
+.Typo {
+	color: #ecf0f1;
 }
